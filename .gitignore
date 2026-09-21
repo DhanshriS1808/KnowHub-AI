@@ -1,0 +1,136 @@
+## .NET + Angular + AI Document Q&A
+## Build results, IDE files, dependencies, secrets and local data
+
+# ==============================
+# .NET Build Results
+# ==============================
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# ==============================
+# NuGet
+# ==============================
+*.nupkg
+*.snupkg
+
+# ==============================
+# Visual Studio
+# ==============================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ==============================
+# VS Code / IDE
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# Node / Angular
+# ==============================
+node_modules/
+dist/
+.angular/
+.cache/
+coverage/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==============================
+# Environment / Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# Local ASP.NET configuration
+appsettings.Local.json
+appsettings.*.local.json
+
+# Certificates / Private Keys
+*.pfx
+*.p12
+*.pem
+*.key
+
+# ==============================
+# Database / Local Data
+# ==============================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==============================
+# AI / Vector Database
+# ==============================
+qdrant_storage/
+chroma/
+vector_data/
+
+# ==============================
+# Uploaded Documents
+# ==============================
+uploads/*
+documents/*
+
+# ==============================
+# Test Results / Coverage
+# ==============================
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+CodeCoverage/
+*.coverage
+*.coveragexml
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# ==============================
+# MSBuild
+# ==============================
+*.binlog
+
+# ==============================
+# Temporary Files
+# ==============================
+~$*
+*~
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
