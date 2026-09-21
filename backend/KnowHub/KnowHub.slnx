@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="KnowHub.API/KnowHub.API.csproj" />
+  <Project Path="KnowHub.Application/KnowHub.Application.csproj" />
+  <Project Path="KnowHub.Domain/KnowHub.Domain.csproj" />
+  <Project Path="KnowHub.Infrastructure/KnowHub.Infrastructure.csproj" />
+</Solution>
