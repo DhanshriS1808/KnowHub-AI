@@ -1,0 +1,145 @@
+<div class="scene" aria-hidden="true">
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+  <div class="glow glow-c"></div>
+  <svg class="ridges" viewBox="0 0 1440 400" preserveAspectRatio="none">
+    <path d="M0 260 180 170l140 70 190-130 170 110 160-90 200 120 170-80 230 110v220H0z" fill="#4a5a8f" opacity=".55" />
+    <path d="M0 320 220 240l180 60 210-90 200 90 190-60 220 80 220-50v190H0z" fill="#384777" opacity=".7" />
+  </svg>
+</div>
+
+<div class="page">
+  <header class="topbar">
+    <a class="brand" routerLink="/login">
+      <app-logo-mark [size]="36" />
+      <span>KnowHub AI</span>
+    </a>
+    <p class="tagline">
+      Smarter Learning <span aria-hidden="true">•</span> Better Decisions
+      <span aria-hidden="true">•</span> Together
+    </p>
+  </header>
+
+  <main class="frame">
+    <section class="showcase" aria-labelledby="showcase-title">
+      <div class="pitch">
+        <h1 id="showcase-title">
+          Your Knowledge,<br />
+          <span class="accent">Supercharged by AI</span>
+        </h1>
+        <p class="lead">
+          KnowHub AI helps you learn, organize and find information — faster, smarter and easier.
+        </p>
+
+        <ul class="features">
+          @for (feature of features; track feature.title) {
+            <li>
+              <span [class]="'feature-icon ' + feature.icon" aria-hidden="true">
+                @switch (feature.icon) {
+                  @case ('chat') {
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 3C6.5 3 2 6.9 2 11.6c0 2.4 1.2 4.6 3.1 6.1L4.4 21l3.9-2c1.2.4 2.4.6 3.7.6 5.5 0 10-3.9 10-8.6S17.5 3 12 3zM7.5 13a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6zm4.5 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6zm4.5 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6z" />
+                    </svg>
+                  }
+                  @case ('folder') {
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h4l2 2h7A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z" />
+                    </svg>
+                  }
+                  @case ('spark') {
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4zM19 16l.9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9z" />
+                    </svg>
+                  }
+                }
+              </span>
+              <div>
+                <h3>{{ feature.title }}</h3>
+                <p>{{ feature.text }}</p>
+              </div>
+            </li>
+          }
+        </ul>
+
+        <p class="signature" aria-label="Learn, Build, Grow">
+          <span>Learn</span><i></i><span>Build</span><i></i><span>Grow</span>
+        </p>
+      </div>
+
+      <div class="visual" aria-hidden="true">
+        <div class="orbit"></div>
+
+        <div class="hub">
+          <svg class="brain" viewBox="0 0 64 64">
+            <defs>
+              <radialGradient id="brain-glow" cx=".5" cy=".45" r=".6">
+                <stop offset="0" stop-color="#f3c6ff" />
+                <stop offset="1" stop-color="#8b6bff" />
+              </radialGradient>
+            </defs>
+            <circle cx="32" cy="32" r="30" fill="url(#brain-glow)" opacity=".9" />
+            <path
+              d="M29 16c-4 0-7 3-7 6-4 1-6 5-5 9-2 2-2 6 0 8 0 4 3 7 7 7 1 2 3 3 5 3zm6 0c4 0 7 3 7 6 4 1 6 5 5 9 2 2 2 6 0 8 0 4-3 7-7 7-1 2-3 3-5 3z"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2.2"
+              stroke-linejoin="round"
+            />
+            <path d="M22 28c3 0 5 2 5 5m15-5c-3 0-5 2-5 5m-15 6c2 0 4-1 5-3m15 3c-2 0-4-1-5-3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <strong>KnowHub AI</strong>
+          <small>Your AI Knowledge Hub</small>
+        </div>
+
+        <span class="tile t-image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="m3 17 5-5 4 4 3-3 6 6" /><circle cx="15.5" cy="8.5" r="1.5" />
+          </svg>
+        </span>
+        <span class="tile t-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="m6 16 4-4 3 3 2-2 3 3" /><circle cx="9" cy="8.5" r="1.3" />
+          </svg>
+        </span>
+        <span class="tile t-doc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 3h8l5 5v13H6z" /><path d="M14 3v5h5M9 12h7M9 15.5h7M9 19h5" />
+          </svg>
+        </span>
+        <span class="tile t-pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 17c2-1 5-6 5-9 0-2-2-2-2 0 0 3 4 7 6 7 1 0 1-1 0-1-3 0-7 2-9 3z" />
+          </svg>
+        </span>
+        <span class="tile t-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1" /><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" />
+          </svg>
+        </span>
+        <span class="tile t-note">
+          <svg viewBox="0 0 32 24" fill="currentColor">
+            <rect x="2" y="3" width="28" height="4" rx="2" /><rect x="2" y="10" width="22" height="4" rx="2" /><rect x="2" y="17" width="26" height="4" rx="2" />
+          </svg>
+        </span>
+      </div>
+    </section>
+
+    <section class="card" aria-label="Account">
+      <nav class="tabs" aria-label="Choose sign in or create account">
+        <a routerLink="/login" [class.active]="mode() === 'login'" [attr.aria-current]="mode() === 'login' ? 'page' : null">
+          Sign In
+        </a>
+        <a routerLink="/register" [class.active]="mode() === 'register'" [attr.aria-current]="mode() === 'register' ? 'page' : null">
+          Create Account
+        </a>
+        <span class="tab-indicator" [class.right]="mode() === 'register'"></span>
+      </nav>
+
+      @if (mode() === 'login') {
+        <app-login-form />
+      } @else {
+        <app-register-form />
+      }
+    </section>
+  </main>
+</div>
