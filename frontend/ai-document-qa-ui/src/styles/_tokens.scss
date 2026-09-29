@@ -1,0 +1,39 @@
+:root {
+  --font-sans: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-script: 'Caveat', 'Segoe Script', cursive;
+
+  /* Scene */
+  --scene-base: #26325a;
+  --on-scene: #ffffff;
+  --on-scene-muted: rgba(255, 255, 255, 0.82);
+
+  /* Glass surfaces */
+  --frame-bg: rgba(22, 32, 66, 0.34);
+  --frame-border: rgba(255, 255, 255, 0.32);
+  --card-bg: rgba(244, 246, 255, 0.78);
+  --card-border: rgba(255, 255, 255, 0.7);
+  --input-bg: rgba(255, 255, 255, 0.62);
+  --input-border: rgba(120, 132, 176, 0.22);
+
+  /* Text on the card */
+  --text-strong: #1c2440;
+  --text-body: #3a4466;
+  --text-muted: #6b7493;
+  --link: #3d6df2;
+
+  /* Brand */
+  --brand-start: #4f8dff;
+  --brand-end: #a47cff;
+  --brand-gradient: linear-gradient(90deg, var(--brand-start), var(--brand-end));
+  --headline-gradient: linear-gradient(90deg, #5fe3ff, #9d8bff 70%, #c28cff);
+  --focus-ring: #6b8cff;
+
+  --danger: #c43a4c;
+  --danger-bg: rgba(229, 72, 94, 0.1);
+  --success: #1f8a5b;
+  --success-bg: rgba(31, 138, 91, 0.1);
+
+  --radius-lg: 28px;
+  --radius-md: 12px;
+  --shadow-card: 0 24px 60px rgba(14, 22, 52, 0.28);
+}
